@@ -1,5 +1,5 @@
 # Javascript-Basic
-**# JavaScript: Conceitos Básicos**
+** # JavaScript: Conceitos Básicos **
 
 Este repositório contém alguns exemplos e exercícios para ajudar a entender os conceitos básicos da linguagem de programação JavaScript.
 
