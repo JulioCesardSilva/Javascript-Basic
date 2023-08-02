@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aula 02</title>
+        <script type="text/javascript">
+        var media = prompt("Digite a Média do Aluno: ");
+            //condicional de media do aluno
+            if(media <= 4){
+                //imprimindo a media depois de passar pela condicional na tela do navegador
+                document.write("Você está de recuperação, sua nota é " + media + "!");
+            }else if(media > 4 && media < 6){
+                document.write("Você passou mas precisa estudar, sua nota é " + media + "!");
+            }else if(media >= 6 && media < 8){
+                document.write("Média boa, sua nota é " + media + "!");
+            }else if(media >= 8 && media <= 10 ){
+                //imprimindo a condicional em uma janela de alerta do navegador
+                alert("Ótimo, sua nota é " + media + "!");
+            }else{
+                alert("Você digitou errado!");
+            }
+                                
+            
+        </script>
+    </head>
+    <body></body>
+</html>

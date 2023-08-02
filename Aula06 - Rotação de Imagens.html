@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aula04</title>
+        
+        <script type="text/javascript">
+            //criando vetor com endereços de imagens online
+            var imagens = ["https://rockcontent.com/br/wp-content/uploads/sites/2/2020/04/Javascript-1024x750.png.webp", "https://www.educative.io/cdn-cgi/image/f=auto,fit=contain,w=1200/api/page/4872441600933888/image/download/5292920040062976", "https://s2-techtudo.glbimg.com/twoewJmwpMgtGPcRPP8SxFlDVmM=/0x0:695x393/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/P/f/y52r4ySZWLkJjEhKLhgw/2014-11-14-java-logo.jpg"];
+                           
+            var titulos = ["Javascript", "C plus plus", "Java"];
+            var alternativos = ["texto 1", "Texto 2", "Texto 3"];
+            
+            var contador = 0;
+            //função para chamar as imagens pelos links fornecidos nos vetores
+            function exibirImagens(){
+                //ação document chama a imagem na posição zero do vetor
+                document.images[0].src = imagens[contador];
+                //o alt da imagem
+                document.images[0].alt = alternativos[contador];
+                // o titulo
+                document.images[0].title = titulos[contador];
+                
+                contador++;
+                
+                //condição para a citação continuar rodando na tela quando chega ao final o contador zera
+                if(contador == imagens.length){
+                    contador = 0;
+                }
+                
+                // o relógio de troca de citação e chama a função
+                setTimeout(exibirImagens, 2000);
+            }
+            
+        </script>
+    </head>
+    <body onload="exibirImagens()">
+        <img/>
+    </body>
+</html>

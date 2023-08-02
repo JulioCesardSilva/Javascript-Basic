@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aula04</title>
+        
+        <script type="text/javascript">
+            //vamos trabalhar com o objeto date que vai trazer tudo referente a data e hora do navegador
+            var dia = new Date();
+            // gethours para trazer as horas dentro do dia por isso chamamos o vetor dia.gethours
+            var horas = dia.getHours();
+            // o mesmo para minutos
+            var minutos = dia.getMinutes();
+            
+            //condicinal para escrever na tela bom dia, boa tarde ou boa noite a depender da hora
+            
+            if(horas <= 12){
+                document.write("Bom dia!");
+                alert(horas + ":" + minutos);                
+            }else if(horas > 12 && horas <= 18){
+                document.write("Boa Tarde!");
+                alert(horas + ":" + minutos);
+            }else if(horas > 18 && horas <= 24){
+                document.write("Boa Noite!");
+                alert(horas + ":" + minutos);
+            }else{
+                document.write("fim do Mundo!!!!")
+            }
+        
+        
+            
+        </script>
+    </head>
+    <body></body>
+</html>

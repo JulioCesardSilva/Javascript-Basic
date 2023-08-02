@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aula04</title>
+        <script type="text/javascript">
+            var citacao = [];
+            
+            citacao[0] = "A educação é a arma mais poderosa que você pode usar para mudar o mundo.";
+            citacao[1] = "O maior erro que um homem pode cometer é sacrificar a sua saúde a qualquer outra vantagem.";
+            citacao[2] = "Não se curem além da conta. Gente curada demais é gente chata. Todo mundo tem um pouco de loucura.";
+            citacao[3] = "A violência, seja qual for a maneira como ela se manifesta, é sempre uma derrota.";
+            citacao[4] = "A natureza não faz milagres, faz revelações.";
+            citacao[5] = "Preconceito é opinião sem conhecimento.";
+            citacao[6] = "A internet é muito mais que uma tecnologia. É um meio de comunicação, de interação e de organização social.";
+            
+            var contador = 0;
+            
+            //função para exibir as citações no codigo html depois do body
+            function exibirTexto(){
+                //cria um nome ao texto para ser chamado depois no html body
+                document.getElementById("texto").innerHTML = citacao[contador];
+                //incrementando o contador 
+                contador++;
+                
+                //condição para a citação continuar rodando na tela quando chega ao final o contador zera
+                if(contador == citacao.length){
+                    contador = 0;
+                }
+                
+                // o relógio de troca de citação e chama a função
+                setTimeout(exibirTexto, 1000);
+            }
+        </script>
+    </head>
+    <body onload="exibirTexto();">
+        <h1>Citações</h1>
+        <div id="texto">Julio</div>
+    </body>
+</html>
