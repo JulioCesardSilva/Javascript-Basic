@@ -6,7 +6,7 @@ Este repositório contém alguns exemplos e exercícios para ajudar a entender o
 ## Conteúdo
 O repositório está organizado da seguinte forma:
 
-## exemplos: esta pasta contém alguns exemplos de código que ilustram os conceitos básicos de JavaScript.
+exemplos: esta pasta contém alguns exemplos de código que ilustram os conceitos básicos de JavaScript.
 
 ## Como usar
 
